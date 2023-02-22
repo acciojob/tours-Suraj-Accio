@@ -17,8 +17,6 @@ jobs:
       - name: Acciojob Assignment Action
         id: assignmentAction
         uses: acciojob/assignment-action@v0.0.4
-        with:
-          node-version: 16
         env:
           ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
       - run: echo "🍏 Score - ${{ steps.assignmentAction.outputs.scoreReceived }}/${{ steps.assignmentAction.outputs.totalScore }}"
